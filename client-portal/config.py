@@ -11,3 +11,6 @@ DB_PORT = config.get("DB_PORT")
 DB_USER = config.get("DB_USER")
 DB_PASS = config.get("DB_PASS")
 DB_HOST = config.get("DB_HOST")
+
+# Adding the environments variable
+environments = config.get("ENVIRONMENTS")
