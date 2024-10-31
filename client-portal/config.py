@@ -1,4 +1,5 @@
-import json, os
+import json
+import os
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -11,3 +12,6 @@ DB_PORT = config.get("DB_PORT")
 DB_USER = config.get("DB_USER")
 DB_PASS = config.get("DB_PASS")
 DB_HOST = config.get("DB_HOST")
+
+# Reading environment variable 'environment' using best practices
+ENVIRONMENT = os.getenv('ENVIRONMENT', 'development')  # Default to 'development' if not set
